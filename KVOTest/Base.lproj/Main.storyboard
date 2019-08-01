@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KVOTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzU-JE-M8s">
+                                <rect key="frame" x="105" y="76" width="204" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8I-bF-l0K">
+                                <rect key="frame" x="105" y="170.5" width="204" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9P-oz-Tpz">
+                                <rect key="frame" x="105" y="261" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he7-M7-AfM">
+                                <rect key="frame" x="105" y="108.5" width="204" height="30"/>
+                                <state key="normal" title="Update name"/>
+                                <connections>
+                                    <action selector="updateNameAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="A3L-Z3-aYE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nla-em-BZ0">
+                                <rect key="frame" x="105" y="199" width="204" height="30"/>
+                                <state key="normal" title="Update Age"/>
+                                <connections>
+                                    <action selector="updateAgeAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="xE9-Fr-YAo"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DeD-5l-Gx7">
+                                <rect key="frame" x="105" y="290" width="204" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textChangeAction" destination="BYZ-38-t0r" eventType="editingChanged" id="Eec-G9-v7F"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nla-em-BZ0" secondAttribute="trailing" constant="105" id="0dE-RZ-cSQ"/>
+                            <constraint firstItem="Z8I-bF-l0K" firstAttribute="top" secondItem="he7-M7-AfM" secondAttribute="bottom" constant="32" id="57o-8g-bwb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DeD-5l-Gx7" secondAttribute="trailing" constant="105" id="8jY-Dk-X09"/>
+                            <constraint firstItem="H9P-oz-Tpz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="D9p-0N-2Qe"/>
+                            <constraint firstItem="DeD-5l-Gx7" firstAttribute="top" secondItem="H9P-oz-Tpz" secondAttribute="bottom" constant="8" id="Dat-7p-RP0"/>
+                            <constraint firstItem="lzU-JE-M8s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="NVb-QL-hdC"/>
+                            <constraint firstItem="he7-M7-AfM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="Z43-4Q-TgL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="he7-M7-AfM" secondAttribute="trailing" constant="105" id="aiJ-5m-8Lg"/>
+                            <constraint firstItem="he7-M7-AfM" firstAttribute="top" secondItem="lzU-JE-M8s" secondAttribute="bottom" constant="12" id="byF-xm-qa8"/>
+                            <constraint firstItem="Nla-em-BZ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="fQf-Gc-JKd"/>
+                            <constraint firstItem="lzU-JE-M8s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="i7D-lo-iOn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z8I-bF-l0K" secondAttribute="trailing" constant="105" id="jTx-EE-veM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H9P-oz-Tpz" secondAttribute="trailing" constant="105" id="jcD-Vo-dpH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lzU-JE-M8s" secondAttribute="trailing" constant="105" id="kiM-rO-VDv"/>
+                            <constraint firstItem="DeD-5l-Gx7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="uI4-GS-XZe"/>
+                            <constraint firstItem="Z8I-bF-l0K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="vwD-46-oHV"/>
+                            <constraint firstItem="Nla-em-BZ0" firstAttribute="top" secondItem="Z8I-bF-l0K" secondAttribute="bottom" constant="8" id="xqI-pH-66c"/>
+                            <constraint firstItem="H9P-oz-Tpz" firstAttribute="top" secondItem="Nla-em-BZ0" secondAttribute="bottom" constant="32" id="zVv-sQ-vES"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="Z8I-bF-l0K" id="Fir-Ci-iRt"/>
+                        <outlet property="nameLabel" destination="lzU-JE-M8s" id="8b8-Qb-leX"/>
+                        <outlet property="textField" destination="DeD-5l-Gx7" id="87D-UJ-4BS"/>
+                        <outlet property="textLabel" destination="H9P-oz-Tpz" id="O0y-Go-m39"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
